@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: lightyellow;
+}
+
+/* header */
+.header {
+    background-image: linear-gradient(114deg, #FFA500 50%, #FF8C00 50%);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px;
+}
+
+.left {
+    margin-left: 10px;
+}
+
+/* main */
+main {
+    margin-top: 10%;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #FF8C00;
+}
+
+#raumBeitretenBtn {
+    font-size: 1.5rem;
+    width: 40%;
+    background-color: orange;
+}
+
+#raumErstellenBtn {
+    font-size: 1.5rem;
+    width: 40%;
+    background-color: orange;
+}
+
+#raumListe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.raum-container {
+    margin: 5%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+}
+
+/* footer */
+footer {
+    background-image: linear-gradient(114deg, #FFA500 50%, #FF8C00 50%);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+@media (min-width: 630px) and (max-width: 700px) {
+    .footer-content p {
+        font-size: .8rem;
+    }
+    
+    .footer-links {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 630px) {
+    .footer-content {
+        display: grid;
+        grid-template-rows: auto auto; 
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="registrieren.css">
+        <title>Registrieren</title>
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <div class="header">
+            <div class="left">Chat Room Connect</div>
+        </div>
+
+        <main>
+            <h2>Registrieren</h2>
+            <form id="registrierForm">
+                <label for="benutzername">Benutzername:</label>
+                <input type="text" id="benutzername" name="benutzername" required>
+        
+                <label for="passwort">Passwort:</label>
+                <input type="password" id="passwort" name="passwort" required>
+        
+                <label for="passwortBestaetigen">Passwort bestätigen:</label>
+                <input type="password" id="passwortBestaetigen" name="passwortBestaetigen" required>
+        
+                <button type="button" onclick="registrieren()">Registrieren</button>
+            </form>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 ChatRoomConnect. Alle Rechte vorbehalten.</p>
+                <nav class="footer-links">
+                    <a href="#">Datenschutz</a> |
+                    <a href="#">Forum</a> |
+                    <a href="#">Über uns</a>
+                </nav>
+            </div>
+        </footer>
+        
+        <script src="registrieren.js"></script>
+    </body>
+</html>
